@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Short+Stack&display=swap');
+    </style>
     <link rel="stylesheet" href="./style.css">
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
     <title>Coding Assesment L2 boilerplate</title>
@@ -12,9 +15,46 @@
 
 <body>
     <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
-    </div>
+        <h1>Select your Choice</h1>
+        <div class="switch" >
+            <div id="men" class="category selected">
+                <img src="./assets/Men.png" alt="Men_icon">
+                <p>Men</p>
+            </div>
+            <div id="women" class="category">
+                <img src="./assets/Women.png" alt="Women_icon">
+                <p>Women</p>
+            </div>
+            <div id="kids" class="category">
+                <img src="./assets/Kids.png" alt="Kids_icon">
+                <p>Kids</p>
+            </div>
+        </div>
+        <div id="card-display">
+            
+            <!-- CARD TEMPLATE -->
+            <!-- <div class="card">
+                    <div class="image-container">
+                        <div class="badge">Wedding Special</div>
+                        <img src="https://plus.unsplash.com/premium_photo-1682090786689-741d60a11384" alt="">
+                    </div>
+                    <div class="description">
+                        <div class="title">
+                            <p class="name">Mens Kurta</p>•<p class="brand">Manywar</p>
+                        </div>
+                        <div class="price-tab">
+                            <div class="price">Rs.1199</div>•
+                            <div class="original">Rs.1299</div>•
+                            <div class="discount">50% Off</div>
+                        </div>
+                    </div>
+                    <button>
+                        Add to Cart
+                    </button>
+            </div> -->
+        </div>
+
+    
     <!-- Happy coding 😊 -->
     <script src="./script.js"></script>
 </body>
