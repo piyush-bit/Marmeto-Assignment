@@ -1,16 +1,16 @@
 
 let data ;
-
 //fetch https://cdn.shopify.com/s/files/1/0564/3685/0790/files/multiProduct.json
 fetch('https://cdn.shopify.com/s/files/1/0564/3685/0790/files/multiProduct.json').then((res)=>res.json()).then((e)=>{
     data=e;
-    Selection("men")
-    
-})
+    Selection("men")   
+}).catch((e)=>showError('Error Occured'))
 
 const cardDisplay = document.getElementById('card-display')
 const switches = document.querySelectorAll('.category')
 const switchesArray = Array.from(switches);
+
+
 
 switchesArray.map((e)=>{
     e.addEventListener('click', (e)=>{Selection(e.target.id)})
@@ -43,6 +43,10 @@ function markSelect(id){
         e.classList.remove('selected')
     })
     document.getElementById(id).classList.add('selected')
+}
+
+function showError (msg) {
+    cardDisplay.innerHTML = `<h2>${msg}</h2>`
 }
 const createCard = (product,container=cardDisplay) => {
     // Create elements
